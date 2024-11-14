@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: rgba(134, 172, 188, 0.765);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.to-do-list{
+  font-family:  Arial, sans-serif;
+  text-align: center;
+  margin-top: 120px;
+
+}
+
+h1{
+  font-size: 4rem ;
+  color: rgb(44, 100, 111);
+}
+button{
+  font-size: 1.4rem;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+  background-color: beige;
+  transition: background-color 0.3s ease;
+}
+.add-button{
+  background-color: hsl(118, 32%, 56%);
+  color: hsl(118, 19%, 28%);
+}
+.add-button:hover{
+  background-color: hsl(118, 32%, 46%);
+}
+.delete-button{
+  background-color: hsl(9, 42%, 49%);
+  color: hsl(8, 39%, 22%);
+}
+.delete-button:hover{
+  background-color: hsl(9, 42%, 40%);
+}
+.move-button{
+  background-color: hsl(42, 33%, 48%);
+}
+.move-button:hover{
+  background-color: hsl(42, 33%, 38%);
+}
+input[type="text"]{
+  font-size:1.5rem ;
+  padding:15px;
+  border: 2px solid hsl(187, 34%, 36%);
+  border-radius: 5px;
+  margin: 5px;
+  color:rgba(51, 77, 86, 0.996);
+  background-color: rgb(194, 212, 224);
+}
+::placeholder {
+  color: rgba(110, 135, 143, 0.996);
+  opacity: 0.5;
+}
+ol{
+  padding:0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(187, 34%, 36%);
+  /* border: 2px solid hsl(0, 15%, 31%); */
+  border: none;
+  border-radius:10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(205, 226, 232);
+}
+.text{
+  flex:1;
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
